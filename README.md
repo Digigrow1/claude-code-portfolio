@@ -43,6 +43,7 @@ browser ─ ngrok ─ nginx(web)      browser ─ ngrok ─ nginx(web) ─┬─
 ├── docker-compose.dev.yml   Vite hot reload
 ├── .env.example         environment variables (copy to .env)
 ├── CLAUDE.md            guidance for Claude Code
+├── LICENSE              MIT, code only (see License below)
 ├── skills-lock.json     pinned source of skills in .claude/skills/
 └── task.md              current phase, checklist and session log
 ```
@@ -107,3 +108,15 @@ All text, projects, skills and links live in [`frontend/src/data/portfolio.json`
 - **ngrok container keeps restarting / no public URL:** `NGROK_AUTHTOKEN` in `.env` is empty or wrong (the service has `restart: unless-stopped`, so it restarts in a loop). Check `docker compose logs ngrok`.
 - **Changed `.env` or `portfolio.json` but the site looks the same:** these are baked in at build time. Run `docker compose up --build -d`.
 - **OneDrive sync is slow or conflicts:** don't run `npm install` inside `frontend/` ([decision 0010](decision/0010-onedrive-no-local-node-modules.md)). Use the Docker workflows above.
+
+## License
+
+The **code** (React app, nginx and Docker setup, scripts and docs) is released under the [MIT License](LICENSE). Reuse it freely.
+
+The **personal content** is not covered by the MIT License and remains © Gyanendra Lalji Singh, all rights reserved:
+
+- the resume content in [`frontend/src/data/portfolio.json`](frontend/src/data/portfolio.json) (name, summary, experience, projects, education, contact details)
+- the profile photo and any other images in [`frontend/public/images/`](frontend/public/images/)
+- screenshots of the site
+
+If you fork this as a template for your own portfolio, replace these with your own content.
