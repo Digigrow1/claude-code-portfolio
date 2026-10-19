@@ -43,6 +43,7 @@ browser ─ ngrok ─ nginx(web)      browser ─ ngrok ─ nginx(web) ─┬─
 ├── docker-compose.dev.yml   Vite hot reload
 ├── .env.example         environment variables (copy to .env)
 ├── CLAUDE.md            guidance for Claude Code
+├── skills-lock.json     pinned source of skills in .claude/skills/
 └── task.md              current phase, checklist and session log
 ```
 
@@ -103,6 +104,6 @@ All text, projects, skills and links live in [`frontend/src/data/portfolio.json`
 
 - **`docker` not found (Windows):** a per-user Docker Desktop install may not be on the PATH of a shell opened before the install. Open a new PowerShell window, or reload PATH from the registry.
 - **The public URL changed:** on the free ngrok plan the URL changes whenever the `ngrok` container restarts. Read the new one at http://localhost:4040, or claim a static domain and set `NGROK_ARGS` (see above).
-- **ngrok container exits immediately:** `NGROK_AUTHTOKEN` in `.env` is empty or wrong. Check `docker compose logs ngrok`.
+- **ngrok container keeps restarting / no public URL:** `NGROK_AUTHTOKEN` in `.env` is empty or wrong (the service has `restart: unless-stopped`, so it restarts in a loop). Check `docker compose logs ngrok`.
 - **Changed `.env` or `portfolio.json` but the site looks the same:** these are baked in at build time. Run `docker compose up --build -d`.
 - **OneDrive sync is slow or conflicts:** don't run `npm install` inside `frontend/` ([decision 0010](decision/0010-onedrive-no-local-node-modules.md)). Use the Docker workflows above.
