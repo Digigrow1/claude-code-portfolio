@@ -2,6 +2,17 @@
 
 A colorful personal portfolio built with React, Vite and Tailwind. It's served by nginx in Docker and published through ngrok. The project is built in phases: Phase 1 is a static site, and Phase 2 adds an Express + PostgreSQL backend for the contact form.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/home-desktop-dark.png">
+  <img alt="Portfolio home page on desktop" src="docs/images/home-desktop-light.png" width="800">
+</picture>
+
+| Light (phone) | Dark (phone) |
+|---|---|
+| <img alt="Home page on a phone, light theme" src="docs/images/home-mobile-light.png" width="240"> | <img alt="Home page on a phone, dark theme" src="docs/images/home-mobile-dark.png" width="240"> |
+
+**Live site:** there's no permanent public URL. The site runs locally with Docker (see [Run it](#run-it-docker)) and is shared through a free ngrok tunnel, whose address changes every time the `ngrok` container restarts.
+
 - **Tasks / progress:** [`task.md`](task.md)
 - **Decisions & reasoning:** [`decision/`](decision/README.md)
 - **Editing content:** [`docs/content.md`](docs/content.md)
