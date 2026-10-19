@@ -21,3 +21,8 @@ desktop.ini
 
 # Source resume: contains the phone number (decision/0009)
 *.docx
+
+# Claude Code: local-only state (the hooks, agents and settings.json are committed)
+.claude/reviews/
+.claude/worktrees/
+.claude/settings.local.json

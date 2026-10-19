@@ -22,6 +22,7 @@ Every significant decision gets one file here (a lightweight ADR). They exist so
 | [0008](0008-design-colorful-creative.md) | Visual design: colorful / creative | Accepted | 1 |
 | [0009](0009-privacy-hide-phone.md) | Keep phone number off the public site | Accepted | 1 |
 | [0010](0010-onedrive-no-local-node-modules.md) | No local node_modules in the OneDrive folder | Accepted | 1 |
+| [0011](0011-file-change-code-review-hook.md) | Automated code review on file change (Claude Code hook) | Accepted | all |
 
 ## Template
 
