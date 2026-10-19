@@ -17,7 +17,7 @@ export default function Hero({ profile, highlights }) {
 
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[1.25fr_1fr]">
         <div className="text-center lg:text-left">
-          <p className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-sm font-medium text-emerald-700 dark:text-emerald-300">
+          <p className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-50 px-4 py-1.5 text-sm font-medium text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-300">
             <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-500" aria-hidden="true" />
             Open to opportunities
           </p>
