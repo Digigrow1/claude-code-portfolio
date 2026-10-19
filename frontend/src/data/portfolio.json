@@ -133,6 +133,24 @@
       "repoUrl": "https://github.com/Gyan-Siingh",
       "liveUrl": null,
       "image": null
+    },
+    {
+      "id": "portfolio",
+      "title": "Portfolio",
+      "subtitle": "This website",
+      "category": "Full-stack",
+      "accent": "cyan",
+      "emoji": "🚀",
+      "description": "A personal portfolio built with React, Vite and Tailwind CSS, served by nginx in Docker and published through ngrok.",
+      "points": [
+        "All content comes from one JSON file behind a small data layer.",
+        "Dark/light themes, scroll animations and reduced-motion support.",
+        "nginx with a strict Content Security Policy and security headers."
+      ],
+      "tags": ["React", "Vite", "Tailwind CSS", "nginx", "Docker"],
+      "repoUrl": "https://github.com/Digigrow1/claude-code-portfolio",
+      "liveUrl": null,
+      "image": "/images/projects/portfolio.png"
     }
   ],
   "education": [
