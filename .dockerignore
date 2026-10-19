@@ -1,0 +1,10 @@
+# Keep the build context small: only frontend/ and nginx/ are needed.
+**/node_modules
+**/dist
+.env
+.env.*
+.git
+*.docx
+*.md
+decision/
+desktop.ini

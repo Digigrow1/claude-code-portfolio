@@ -1,0 +1,165 @@
+{
+  "profile": {
+    "name": "Gyanendra Lalji Singh",
+    "shortName": "Gyan Singh",
+    "headline": "Web Developer & Content Creator",
+    "roles": ["Web Developer", "Frontend Enthusiast", "Content Creator"],
+    "summary": "Passion for coding and creating website layouts. Skilled in content creation, expanding technical expertise, and learning new technologies. Seeking opportunities to leverage creativity and coding skills.",
+    "degree": "BSc Information Technology",
+    "photo": "/images/profile.jpg",
+    "email": "gyans6525@gmail.com",
+    "phone": null,
+    "showPhone": false,
+    "socials": [
+      { "label": "GitHub", "url": "https://github.com/Gyan-Siingh", "icon": "github" },
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/gyan-siingh/", "icon": "linkedin" }
+    ]
+  },
+  "highlights": [
+    { "value": "40%", "label": "Product revenue growth at Thrive" },
+    { "value": "4+", "label": "Projects built" },
+    { "value": "4", "label": "Certifications" },
+    { "value": "2+ yrs", "label": "Content creation" }
+  ],
+  "skills": [
+    {
+      "group": "Frontend",
+      "icon": "🎨",
+      "items": ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Bootstrap"]
+    },
+    {
+      "group": "Languages & Backend",
+      "icon": "⚙️",
+      "items": ["Core Java", "Python", "Node.js", "SQL"]
+    },
+    {
+      "group": "Tools & Platforms",
+      "icon": "🧰",
+      "items": ["Google Ad Manager (DoubleClick for Publishers)", "VS Code", "GitHub", "Docs"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Intern",
+      "company": "Thrive",
+      "type": "Internship",
+      "period": "Mar 2024 – Sep 2024",
+      "points": [
+        "Achieved 40% product revenue growth in three months by planning and launching four new key features.",
+        "Integrated third-party APIs such as [e.g., Google Maps, Stripe]."
+      ]
+    }
+  ],
+  "otherWork": [
+    {
+      "title": "Content Creator",
+      "period": "2+ years",
+      "icon": "🎥",
+      "description": "Generated many videos and shared them across the world with a big fanbase family."
+    },
+    {
+      "title": "Cashier",
+      "org": "D'Mart",
+      "period": "2+ years",
+      "icon": "🛒",
+      "description": "Part-time cashier, 4 hours a day."
+    },
+    {
+      "title": "Mobile Software & Hardware Repair",
+      "period": "5+ years",
+      "icon": "📱",
+      "description": "Part-time mobile software and hardware repairing."
+    }
+  ],
+  "projects": [
+    {
+      "id": "wassup",
+      "title": "Wassup",
+      "subtitle": "Real-time web chat application",
+      "category": "Full-stack",
+      "accent": "violet",
+      "emoji": "💬",
+      "description": "A real-time chat application built with Socket.io and Node.js, where multiple people can connect and chat together.",
+      "points": [
+        "Users on different servers can join the same conversation through a shared URL.",
+        "Frontend layout created with JavaScript, Tailwind CSS and HTML."
+      ],
+      "tags": ["Socket.io", "Node.js", "JavaScript", "Tailwind CSS", "HTML"],
+      "repoUrl": "https://github.com/Gyan-Siingh",
+      "liveUrl": null,
+      "image": null
+    },
+    {
+      "id": "travel-agency-backend",
+      "title": "Travel Agency Backend",
+      "subtitle": "Object-oriented booking system",
+      "category": "Backend",
+      "accent": "orange",
+      "emoji": "🧳",
+      "description": "The backend of a travel agency system, built with core Java object-oriented programming concepts.",
+      "points": [],
+      "tags": ["Java", "OOP"],
+      "repoUrl": "https://github.com/Gyan-Siingh",
+      "liveUrl": null,
+      "image": null
+    },
+    {
+      "id": "wanderlust",
+      "title": "Wanderlust",
+      "subtitle": "Travel agency website",
+      "category": "Frontend",
+      "accent": "cyan",
+      "emoji": "🌍",
+      "description": "Developed a multi-page responsive website layout for a travel agency using HTML, CSS, and JavaScript.",
+      "points": ["Implemented form validation for user-friendly booking and contact forms."],
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "repoUrl": "https://github.com/Gyan-Siingh",
+      "liveUrl": null,
+      "image": null
+    },
+    {
+      "id": "aniflex",
+      "title": "ANIFLEX",
+      "subtitle": "Anime streaming website design",
+      "category": "Frontend",
+      "accent": "pink",
+      "emoji": "🎬",
+      "description": "Anime watching website design built with Swiper JS.",
+      "points": [
+        "Added form validation.",
+        "Frontend layout established with HTML, CSS, JS and SwiperJS."
+      ],
+      "tags": ["HTML", "CSS", "JavaScript", "SwiperJS"],
+      "repoUrl": "https://github.com/Gyan-Siingh",
+      "liveUrl": null,
+      "image": null
+    }
+  ],
+  "education": [
+    {
+      "qualification": "BSc Information Technology",
+      "institute": "Vikas College Of Science, Commerce & Arts",
+      "year": "2022",
+      "score": "8.28 CGPI"
+    },
+    {
+      "qualification": "HSC (XII)",
+      "institute": "Vikas College Of Science, Commerce & Arts",
+      "year": "2019",
+      "score": "62%"
+    },
+    {
+      "qualification": "SSC (X)",
+      "institute": "SVM High School",
+      "year": "2017",
+      "score": "81.80%"
+    }
+  ],
+  "certifications": [
+    { "name": "Frontend Technologies (HTML, CSS, JS)", "issuer": "JSpider", "year": "2023" },
+    { "name": "SQL", "issuer": "JSpider", "year": null },
+    { "name": "Core Java", "issuer": "JSpider", "year": null },
+    { "name": "Python", "issuer": "Google – Coursera", "year": null }
+  ],
+  "interests": ["Editing Videos", "Sketching", "Sports", "Capturing Moments", "Drawing", "Creativity"]
+}

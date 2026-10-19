@@ -1,0 +1,39 @@
+# Phase 1: nginx serves the built React app; ngrok exposes it publicly.
+# Phase 2 adds `backend` + `db` services on the same network (decision/0006).
+name: portfolio
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
+      args:
+        VITE_DATA_SOURCE: ${VITE_DATA_SOURCE:-static}
+        VITE_CONTACT_MODE: ${VITE_CONTACT_MODE:-mailto}
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-/api}
+    image: gyan-portfolio-web:latest
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    restart: unless-stopped
+    networks:
+      - portfolio_net
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    # NGROK_ARGS lets you add flags without editing this file,
+    # e.g. NGROK_ARGS=--url=your-name.ngrok-free.app for a static domain.
+    command: http web:80 --log stdout ${NGROK_ARGS:-}
+    environment:
+      NGROK_AUTHTOKEN: ${NGROK_AUTHTOKEN:-}
+    ports:
+      - "127.0.0.1:4040:4040" # local inspector UI, shows the public URL
+    depends_on:
+      web:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - portfolio_net
+
+networks:
+  portfolio_net:
+    name: portfolio_net

@@ -1,0 +1,4 @@
+# Keep LF in the repo and working copy; Docker/nginx files are read inside Linux containers
+* text=auto eol=lf
+*.jpg binary
+*.png binary
